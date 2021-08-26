@@ -70,4 +70,4 @@ YoloV5-Medium is trained and evaluated on the upsampled versions of the dataset 
 #### Experiment 2:
 YoloV5-Medium is trained over the ground truth dataset and then evaluated on the upsampled versions of the test set obtained through using the SR models.
 
-![Detection Results](/figures/8x detection results2.png)
+![Detection Results](/figures/8x_detection_results2.png)
