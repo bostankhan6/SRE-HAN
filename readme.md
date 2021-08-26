@@ -1,15 +1,16 @@
-# Squeeze-and-Residual-Excitation Holistic Attention Network
+# Squeeze-and-Residual-Excitation Holistic Attention Network For Improved Super Resolution in Remote Sensing Imagery
 This repository is for Squeeze-and-Residual-Excitation Holistic Attention Network (HAN)
 
-The model is built in PyTorch 1.8.1.
+The model is built in PyTorch 1.8.1 and test on a Windows-64 device. 
 
 ## Contents
 1. [Introduction](#introduction)
 2. [Network](#network)
-3. [Test](#test)
-4. [Results](#results)
-5. [Citation](#citation)
-6. [Acknowledgements](#acknowledgements)
+3. [Setup](#setup)
+4. [Test](#test)
+5. [Results](#results)
+6. [Citation](#citation)
+7. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -18,3 +19,41 @@ Super-resolution (SR) provides an excellent approach of improving applications r
 ## Network
 
 ![SRE-HAN Super Resolution Framework](/figures/sre_han_complete.png)
+
+## Setup
+The setup can be done through one  of the following methods:
+
+1. A new environment can be created using the 'requirements.yml' file by executing the following command:
+   ```bash
+   conda env create -f requirements.yml
+    ```
+2. Or it can also be created through the given "conda_environment.txt" file.
+    ```bash
+   conda create --name sre-han --file conda_environment.txt
+    ```
+
+Use the created environment for testing and performing experiments.
+
+## Test
+
+Place images that you want to upsample in the 'demo/low_res_images' folder
+
+CD to 'src' and run one of the following script
+
+The upsampled images will be found in the 'demo/results/results-Demo' folder.
+
+```bash
+#for 4x upsampling
+python main.py --template 4X_SRE_HAN --pre_train ../trained_models/sre_han_x4.pt --n_GPUs=2 --data_test Demo --dir_demo ../demo/low_res_images --test_only --save ../demo/results --save_results
+
+#for 8x upsampling
+python main.py --template 8X_SRE_HAN --pre_train ../trained_models/sre_han_x8.pt --n_GPUs=2 --data_test Demo --dir_demo ../demo/low_res_images --test_only --save ../demo/results --save_results
+```
+
+## Results
+
+### SR Results
+
+The super-resolution performance over the Satellite Imagery Multi-Vehicles Dataset of our model and three previous state-of-the-art models are shown in this section. Our model outperforms the other models for both 4x and 8x upsampling.
+
+![Results](/figures/results.png)
