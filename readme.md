@@ -75,4 +75,4 @@ YoloV5-Medium is trained over the ground truth dataset and then evaluated on the
 
 The visual results for the performance of the object detection model that has been trained on the ground truth dataset and then evaluated on the images upsampled through bicubic method and SRE-HAN model are shown here. 
 
-![Detection Results2](/figures/8x_visual_detection_results.png)
+![Visual Detection Results2](/figures/8x_visual_detection_results.png)
