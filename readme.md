@@ -79,3 +79,7 @@ The visual results for the performance of the object detection model that has be
 Ground truth trained YoloV5 Object Detection Model is applied over both of the above images and we can see that the detection model is unable to detection any of the vehicles in the bicubic upsampled image. On the other hand, Yolov5 detects many of the objects in the image upsampled through our SRE-HAN model.
 
 ![Visual Detection Results2](/figures/8x_visual_detection_results2.png)
+Similarly, in the bicubic upsampled image the detection model detects only 1 object, whereas in the SRE-HAN upsampled image all of the objects have been detected except one.
+
+## Acknowledgements
+This code is built on [HAN (PyTorch)](https://github.com/wwlCape/HAN), [RCAN (PyTorch)](https://github.com/yulunzhang/RCAN) and [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for sharing their codes.
