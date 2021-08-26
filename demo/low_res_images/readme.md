@@ -1,0 +1,1 @@
+Please add the low resolution images that need to be upsampled in this folder.
