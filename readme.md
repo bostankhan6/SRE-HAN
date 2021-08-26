@@ -65,4 +65,4 @@ We use YoloV5-Medium mopel presented by Glenn Jocher to perform two types of obj
 #### Experiment 1:
 YoloV5-Meduium is trained and evaluated on the upsampled versions of the dataset obtained through using the super-resolution models. The results are as follows:
 
-!Detection Results](/figures/8x_Detection_Results.png)
+![Detection Results](/figures/8x_Detection_Results.png)
