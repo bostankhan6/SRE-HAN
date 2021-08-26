@@ -1,7 +1,7 @@
 # Squeeze-and-Residual-Excitation Holistic Attention Network For Improved Super Resolution in Remote Sensing Imagery
-This repository is for Squeeze-and-Residual-Excitation Holistic Attention Network (HAN)
+This repository is for Squeeze-and-Residual-Excitation in Holistic Attention Network (SRE-HAN)
 
-The model is built in PyTorch 1.8.1 and test on a Windows-64 device. 
+The model is built in PyTorch 1.8.1. 
 
 ## Contents
 1. [Introduction](#introduction)
