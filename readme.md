@@ -57,3 +57,12 @@ python main.py --template 8X_SRE_HAN --pre_train ../trained_models/sre_han_x8.pt
 The super-resolution performance over the Satellite Imagery Multi-Vehicles Dataset of our model and three previous state-of-the-art models are shown in this section. Our model outperforms the other models for both 4x and 8x upsampling.
 
 ![Results](/figures/results.png)
+
+### Object Detection 8x SR Results
+
+We use YoloV5-Medium mopel presented by Glenn Jocher to perform two types of object detection experiments.
+
+#### Experiment 1:
+YoloV5-Meduium is trained and evaluated on the upsampled versions of the dataset obtained through using the super-resolution models. The results are as follows:
+
+![8x Detection](/figures/8x Detection Results.png)
