@@ -9,8 +9,7 @@ The model is built in PyTorch 1.8.1 and test on a Windows-64 device.
 3. [Setup](#setup)
 4. [Test](#test)
 5. [Results](#results)
-6. [Citation](#citation)
-7. [Acknowledgements](#acknowledgements)
+6. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -71,3 +70,9 @@ YoloV5-Medium is trained and evaluated on the upsampled versions of the dataset 
 YoloV5-Medium is trained over the ground truth dataset and then evaluated on the upsampled versions of the test set obtained through using the SR models.
 
 ![Detection Results2](/figures/8x_detection_results2.png)
+
+### Visual Results for 8x Upsampling and Consequent Object Detection
+
+The visual results for the performance of the object detection model that has been trained on the ground truth dataset and then evaluated on the images upsampled through bicubic method and SRE-HAN model are shown here. 
+
+![Detection Results2](/figures/8x_visual_detection_results.png)
